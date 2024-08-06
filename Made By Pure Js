@@ -1,8 +1,8 @@
 const prompt = require('prompt-sync')();
 
-
+console.time('Password Generated In : ')
 // For Symbols --------------------------------------------
-const symbols = ['!','@','#','$','%','&','*','-','_','+','/']
+const symbols = ['!','@','#','$','*','-','_','+',]
 
 let symbolIndex1 = Math.floor(Math.random() * symbols.length);
 let symbolIndex2 = Math.floor(Math.random() * symbols.length);
@@ -71,5 +71,9 @@ console.log(collection)
 console.log("__________________________________________________")
 console.log("")
 const pass = getNumber3+getChar3+getSymbol1+getLowerChar1+getChar1+getSymbol2+getNumber1+getLowerChar3+getNumber2+getNumber3+getChar2+getLowerChar2+getSymbol3;
-console.log(pass)
+console.log('PassWord : '+ pass)
+console.log("")
+console.timeEnd('Password Generated In : ')
+
+
 
